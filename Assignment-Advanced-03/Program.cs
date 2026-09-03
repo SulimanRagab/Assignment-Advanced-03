@@ -37,3 +37,35 @@
 //    Console.WriteLine(grade);
 //} 
 #endregion
+
+#region Exercise 2: Leaderboard
+//SortedDictionary<int, string> scorePlayers = new SortedDictionary<int, string>();
+
+//scorePlayers.Add(500,"Ahmed");
+//scorePlayers.Add(200, "Sara");
+//scorePlayers.Add(800, "Ali");
+//scorePlayers.Add(350, "Mona");
+
+//foreach (var student in scorePlayers)
+//{
+//    Console.WriteLine($"score: {student.Key}, Name: {student.Value}");
+//}
+//Console.WriteLine($"first plyer: {scorePlayers.First()}");
+
+//Console.WriteLine(scorePlayers.ContainsKey(500));
+
+//if(scorePlayers.TryGetValue(999, out var value))
+//{
+//    Console.WriteLine(value);
+//}
+//else
+//{
+//    Console.WriteLine("Noo key 999");
+//}
+//scorePlayers.Remove(200);
+//Console.WriteLine("ThelowerRanked player was eliminated");
+//foreach (var scorePlayersed in scorePlayers)
+//{
+//    Console.WriteLine(scorePlayersed);
+//} 
+#endregion
