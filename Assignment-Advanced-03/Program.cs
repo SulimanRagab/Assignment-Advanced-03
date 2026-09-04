@@ -69,3 +69,59 @@
 //    Console.WriteLine(scorePlayersed);
 //} 
 #endregion
+
+#region Exercise 3: Phone Book
+////1-Create a Collection  with 4 contacts (name → phone number)
+//Dictionary<string, long> PhoneBook = new Dictionary<string, long>
+//{
+//    {"Ahmed", 01534567890},
+//    {"Sara", 010876543210},
+//    {"Ali", 0125555555},
+//    {"Mona", 011416134511}
+//};
+////2-Add a new contact using [] syntax (add or update)
+//PhoneBook["suliman"] = 01555427709;
+//PhoneBook["Ali"] = 01012333333;
+////3-Try adding a duplicate using .Add() — catch the exception and print the error
+//try
+//{
+// PhoneBook.Add("Ahmed", 01534567890);
+//}
+//catch (ArgumentException ex)
+//{
+//  Console.WriteLine(ex.Message);
+//}
+////4-Try adding a duplicate using .TryAdd() — print whether it succeeded
+//bool readd = PhoneBook.TryAdd("Ahmed", 01534567890);
+//if (readd)
+//{
+//    Console.WriteLine("Ahmedadd");
+//}
+//else
+//{
+//    Console.WriteLine("Ahmed alreadyExists");
+//}
+////Print
+//foreach (var contact in PhoneBook)
+//{
+//    Console.WriteLine($"Name: {contact.Key}, Phone: {contact.Value}");
+//}
+////5-Search for a contact that doesn’t exist
+//Console.WriteLine(PhoneBook.ContainsKey("Ali"));
+//Console.WriteLine(PhoneBook.ContainsKey("hossam"));
+////6-Search for a contact that doesn’t exist
+//if (PhoneBook.TryGetValue("hossam", out var phoneNumber))
+//{
+//    Console.WriteLine($"hossam phone number is:{phoneNumber}");
+//}
+//else
+//{
+//    Console.WriteLine("Not Found");
+//}
+////7-Print all Keys on one line, then all Values on another line
+//int entityNumber = 1;
+//foreach (var contact in PhoneBook)
+//{
+//    Console.WriteLine($"Entity Number:{entityNumber++}\nName: {contact.Key} \nPhone: {contact.Value}");
+//} 
+#endregion
