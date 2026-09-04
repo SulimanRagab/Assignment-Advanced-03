@@ -144,7 +144,7 @@
 //عدد النسخ المخزنه فعليا {"ahmed@test.com"} و {"sara@test.com"} بس  لأن StringComparer.OrdinalIgnoreCase فحصت ولقت ان فيه نسخ بنفس الاسم مع حروف Uppercase
 
 //4-Create two sets: Set A = {1,2,3,4,5} and Set B = {4,5,6,7,8}
-//HashSet<int> setA =[ 1, 2, 3, 4, 5 ];
+//HashSet<int> setA = [1, 2, 3, 4, 5];
 //HashSet<int> setB =[ 4, 5, 6, 7, 8];
 //5-Print the result of: UnionWith, IntersectWith, ExceptWith
 //HashSet<int> SetA = new HashSet<int>(setA);
@@ -171,6 +171,6 @@
 //}
 
 //Use IsSubsetOf to check if {1,2} is a subset of Set A
-//HashSet<int> setC = [1,2];
-//Console.WriteLine(setC.IsProperSubsetOf(setA)); // true 
+//HashSet<int> setC = [1, 2];
+//Console.WriteLine(setC.IsSubsetOf(setA)); // true 
 #endregion
