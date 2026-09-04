@@ -125,3 +125,52 @@
 //    Console.WriteLine($"Entity Number:{entityNumber++}\nName: {contact.Key} \nPhone: {contact.Value}");
 //} 
 #endregion
+
+#region Exercise 4: Unique Email Validator
+//1-Create a HashSet<string> with a case-insensitive comparer: new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+//2-Add these emails: "ahmed@test.com", "AHMED@test.com", "sara@test.com", "Sara@Test.Com"
+//HashSet<string> emaels = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+//{
+//    {"ahmed@test.com"},
+//    {"AHMED@test.com"},
+//    {"sara@test.com"},
+//    {"Sara@Test.Com"}
+//};
+//3-Print Count — how many are actually stored? Explain why.
+//foreach (var emael in emaels)
+//{
+//    Console.WriteLine(emael);
+//}
+//عدد النسخ المخزنه فعليا {"ahmed@test.com"} و {"sara@test.com"} بس  لأن StringComparer.OrdinalIgnoreCase فحصت ولقت ان فيه نسخ بنفس الاسم مع حروف Uppercase
+
+//4-Create two sets: Set A = {1,2,3,4,5} and Set B = {4,5,6,7,8}
+//HashSet<int> setA =[ 1, 2, 3, 4, 5 ];
+//HashSet<int> setB =[ 4, 5, 6, 7, 8];
+//5-Print the result of: UnionWith, IntersectWith, ExceptWith
+//HashSet<int> SetA = new HashSet<int>(setA);
+//دمج المجموعتين setA و setB
+//SetA.UnionWith(setB);
+//Console.WriteLine("SetA.UnionWith(setB)");
+//foreach (var item in SetA)
+//{
+//    Console.WriteLine(item);
+//}
+//العناصر المشتركة بين المجموعتين setA و setB هي 4 و 5
+//SetA.IntersectWith(setB);
+//Console.WriteLine("SetA.IntersectWith(setB)");
+//foreach (var item in SetA)
+//{
+//    Console.WriteLine(item);
+//}
+//العناصر الموجودة في setA وليست موجودة في setB هي 1 و 2 و 3
+//SetA.ExceptWith(setB);
+//Console.WriteLine("SetA.Except(setB)");
+//foreach (var item in SetA)
+//{
+//    Console.WriteLine(item);
+//}
+
+//Use IsSubsetOf to check if {1,2} is a subset of Set A
+//HashSet<int> setC = [1,2];
+//Console.WriteLine(setC.IsProperSubsetOf(setA)); // true 
+#endregion
